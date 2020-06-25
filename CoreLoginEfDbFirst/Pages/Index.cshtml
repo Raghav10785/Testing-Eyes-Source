@@ -1,0 +1,56 @@
+﻿@page "{handler?}"
+
+@model IndexModel
+
+@{
+    ViewBag.Title = "Testing Eyes";
+}
+
+<div style="background-color:floralwhite">
+    <div style="">
+
+        <div class="container body-content" style="background-color:floralwhite">
+            <br /><br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <form method="post" role="form" class="form-horizontal" style="background-image:url(Images/LoginLogo.png); background-origin:padding-box; padding-bottom:90px; background-size:25%;background-repeat:no-repeat">
+                @Html.AntiForgeryToken()
+
+                <hr />
+                <br />
+                <br />
+                <br />
+                <br />
+                <div style="width:80%; padding-left:450px">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="form-group" style="color:black">
+                        @Html.LabelFor(m => m.LoginModel.Username, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(m => m.LoginModel.Username, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.LoginModel.Username, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="color:black">
+                        @Html.LabelFor(m => m.LoginModel.Password, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.PasswordFor(m => m.LoginModel.Password, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.LoginModel.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <button asp-page-handler="LogIn" id="btnLogin" class="btn btn-default" style="background-color:white; border-color:black; color:dodgerblue; width:80px; height:38px"><b>Log in</b></button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://signupformtestingeyes.azurewebsites.net/signup.aspx" id="idSignup"><img style="width:81px; border-color:black" class="btn btn-default" src="~/Images/signupNew.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

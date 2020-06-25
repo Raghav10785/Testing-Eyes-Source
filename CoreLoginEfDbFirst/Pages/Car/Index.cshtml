@@ -1,0 +1,56 @@
+﻿@page
+@model TestingEyes.Pages.Car.IndexModel
+@{
+    ViewBag.Title = "Testing Eyes";
+}
+
+<div class="row">
+    <form method="post" role="form" class="form-horizontal" style="padding-top:40px; align-content:end">
+
+        <div class="col-md-8" style="padding-right:100px">
+            @*@Html.ActionLink("Home", "Index", "Electronic", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Electronics", "Index", "Electronic", new { area = "" }, new { @class = "navbar-brand" })*@
+            <ul class="nav navbar-nav navbar-left" style="font-size:large; font-weight:100">
+                <li><a asp-page="/Home/Index" id="idHome"><b>Home</b></a></li>
+                <li><a asp-page="/Electronics/Index" id="idElectronic"><b>Electronics</b></a></li>
+                <li><a asp-page="/Car/Index" id="idCar"><b>Cars</b></a></li>
+
+            </ul>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button asp-page-handler="LogOff" class="btn btn-default" id="btnlogoff" style="background-color:white; border-color:black; color:dodgerblue"><b>Log Out</b></button>
+    </form>
+</div>
+
+<div class="jumbotron"  style="background-color:black">
+    <h1 style="font-size:x-large; color:white"><b>Cars :</b></h1>
+    <div class="col-md-10">
+
+    </div>
+    <br />
+    <br />
+    <div>
+
+        <a asp-page="/Maruti/Index" id="idCarMaruti" style="width:30px;">
+            <img src="@Url.Content("images/Swift.png")" style="width:43%" />
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a asp-page="/Tata/Index" id="idCarTata" style="width:10px; padding:10px; padding-left:80px">
+            <img src="@Url.Content("images/Tata.png")" style="width:43%; height:40%" />
+        </a>
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label id="lblCarswift" style="font-size:x-large;color:white;padding-left:70px">SWIFT</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label id="lblCarTata" style="font-size:x-large;color:white;padding-left:80px">TATA - TIAGO</label>
+    </div>
+</div>
+

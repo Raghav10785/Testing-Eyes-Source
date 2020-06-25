@@ -1,0 +1,52 @@
+﻿@page
+@model TestingEyes.Pages.Samsung.IndexModel
+@{
+}
+<div class="row">
+    <form method="post" role="form" class="form-horizontal" style="padding-top:40px; align-content:end">
+
+        <div class="col-md-8" style="padding-right:100px">
+            <ul class="nav navbar-nav navbar-left" style="font-size:large; font-weight:100">
+            </ul>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button asp-page-handler="LogOff" class="btn btn-default" id="btnlogoff" style="background-color:white; border-color:black; color:dodgerblue"><b>Log Out</b></button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="back" id="btnback" class="btn btn-default" onclick="location.href='Electronics'" title="Back to menu" style="background-color:white; font:bold;border-color:black; color:dodgerblue"/>
+    </form>
+</div>
+
+<div class="jumbotron" style="background-color:black">
+    @*<div class="col-md-10">
+
+    </div>*@
+    <div>
+        <a href="" id="idsamMobile1" style="width:60%;">
+            <b> 1.</b>&nbsp;&nbsp;  <img src="@Url.Content("images/samsung1.png")" style="width:60%" />
+        </a>
+        <br />
+        <br />
+        &nbsp;
+        <a href="" id="idsamMobile2" style="width:60%;">
+            <b> 2.</b>   <img src="@Url.Content("images/samsung2.png")" style="width:60%" />
+        </a>
+
+    </div>
+</div>
+
+@*<div class="row">
+    <form method="post" role="form" class="form-horizontal" style="padding-top:40px; align-content:end">
+
+        <a href="" id="idMobile" style="width:60%;">
+            <b> 1.</b>  <img src="@Url.Content("images/samsung1.png")" style="width:60%" />
+        </a>
+        <br />
+        <br />
+        &nbsp;
+        <a href="" id="idMobile1" style="width:60%;">
+            <b> 2.</b>   <img src="@Url.Content("images/samsung2.png")" style="width:60%" />
+        </a>
+    </form>
+</div>*@

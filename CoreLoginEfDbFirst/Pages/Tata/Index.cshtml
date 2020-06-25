@@ -1,0 +1,32 @@
+﻿@page
+@model TestingEyes.Pages.Tata.IndexModel
+@{
+}
+<div class="row">
+    <form method="post" role="form" class="form-horizontal" style="padding-top:40px; align-content:end">
+
+        <div class="col-md-8" style="padding-right:100px">
+            <ul class="nav navbar-nav navbar-left" style="font-size:large; font-weight:100">
+            </ul>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button asp-page-handler="LogOff" class="btn btn-default" id="btnlogoff" style="background-color:white; border-color:black; color:dodgerblue"><b>Log Out</b></button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="back" id="btnback" class="btn btn-default" onclick="location.href='Car'" title="Back to menu" style="background-color:white;font:bold; border-color:black; color:dodgerblue"/>
+    </form>
+</div>
+
+<div class="jumbotron" style="background-color:black">
+    <div class="col-md-10">
+
+    </div>
+    <div>
+
+        <a asp-page="/Samsung/Index" id="idTiagoMaruti" style="width:100%;">
+            <img src="@Url.Content("images/TiagoPrice.png")" style="width:100%" />
+        </a>
+
+    </div>
+</div>

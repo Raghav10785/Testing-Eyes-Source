@@ -1,0 +1,38 @@
+﻿@page
+
+
+@model CoreLoginEfDbFirst.Pages.Home.IndexModel
+
+@{
+    //Simple Login Database First Approach
+    ViewBag.Title = "Testing Eyes";
+}
+
+<div class="row">
+    <form method="post" role="form" class="form-horizontal" style="padding-top:40px; align-content:end">
+
+        <div class="col-md-8" style="padding-right:100px">
+            <ul class="nav navbar-nav navbar-left" style="font-size:large; font-weight:100">
+                <li><a asp-page="/Home/Index" id="IdHome"><b>Home</b></a></li>
+                <li><a asp-page="/Electronics/Index" id="IdElectronic"><b>Electronic</b></a></li>
+                <li><a asp-page="/Car/Index"  id="IdCar"><b>Cars</b></a></li>
+            </ul>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button asp-page-handler="LogOff" class="btn btn-default" id="btnlogoff" style="background-color:white; border-color:black; color:dodgerblue"><b>Log Out</b></button>
+    </form>
+</div>
+<div class="jumbotron" style="background-color:black">
+    <h1 style="color:white"><b>Testing Eyes</b></h1>
+    <br />
+
+    <p class="lead" id="IdContent" style="font-style:italic; color:white; font-size:x-large">
+        Idea behind Test eyes is to provide a user-friendly report with the list of test cases and scenarios and to provide a capability of running those tests by clicking on them using a web application for a Luddite to.
+        Also, Test eyes enable developers to Build, check and run automated tests on the server even before committing their changes – keeping code base clean at all times.
+    </p>
+    <img src="@Url.Content("images/Automation.png")" style="width:80%; height:70%" />
+</div>
+
+

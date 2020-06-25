@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\images\Automation.png" />
+    <Content Remove="wwwroot\images\LoginLogo.png" />
+    <Content Remove="wwwroot\images\Marutiprice.png" />
+    <Content Remove="wwwroot\images\MobileImage1.jpg" />
+    <Content Remove="wwwroot\images\MobileImg2.jpg" />
+    <Content Remove="wwwroot\images\Nokia1.png" />
+    <Content Remove="wwwroot\images\Nokia2.png" />
+    <Content Remove="wwwroot\images\NokiaImg.png" />
+    <Content Remove="wwwroot\images\samsung1.png" />
+    <Content Remove="wwwroot\images\samsung2.png" />
+    <Content Remove="wwwroot\images\Samsungimg.png" />
+    <Content Remove="wwwroot\images\signup.png" />
+    <Content Remove="wwwroot\images\signupNew.png" />
+    <Content Remove="wwwroot\images\Swift.png" />
+    <Content Remove="wwwroot\images\Tata.png" />
+    <Content Remove="wwwroot\images\TiagoPrice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\images\Automation.png" />
+    <None Include="wwwroot\images\LoginLogo.png" />
+    <None Include="wwwroot\images\Marutiprice.png" />
+    <None Include="wwwroot\images\MobileImage1.jpg" />
+    <None Include="wwwroot\images\MobileImg2.jpg" />
+    <None Include="wwwroot\images\Nokia1.png" />
+    <None Include="wwwroot\images\Nokia2.png" />
+    <None Include="wwwroot\images\NokiaImg.png" />
+    <None Include="wwwroot\images\samsung1.png" />
+    <None Include="wwwroot\images\samsung2.png" />
+    <None Include="wwwroot\images\Samsungimg.png" />
+    <None Include="wwwroot\images\signup.png" />
+    <None Include="wwwroot\images\signupNew.png" />
+    <None Include="wwwroot\images\Swift.png" />
+    <None Include="wwwroot\images\Tata.png" />
+    <None Include="wwwroot\images\TiagoPrice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Images\LogoTestingeyes.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\TestingEyesLogo.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
